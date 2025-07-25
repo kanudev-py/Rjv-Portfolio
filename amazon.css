@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    border: border-box;
+}
+
+
+.navbar {
+    height: 60px;
+    background-color: #4100F5;
+    color: #CDF564 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.nav-logo {
+    height: 80px;
+    width: 90px;  
+    transition: transform 0.3s ease;
+} 
+
+.nav-logo:hover{
+  transform: scale(1.2);
+}
+
+
+.logo {
+    background-image:url(Blue_and_White_Globe_Y2K_Streetwear_Logo-removebg-preview.png);
+    background-size: cover;
+    height: 80px;
+    width: 90px;
+    position: relative;
+    bottom: 5px;   
+}
+
+.border {
+    border: 2px outset transparent ;
+}
+
+.border:hover{
+    border: 2px outset #CDF564 ;
+}
+
+/** box2 **/
+.add-first{
+    font-size: 0.8rem;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.add-second{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+    font-weight: 1000;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/** box3 **/
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 800px;
+    background-color: #CDF564;
+    border-radius: 5px;   
+}
+
+.nav-search:hover{
+    border: 5px outset  #CAF500 ;
+}
+
+.search-select{
+   background-color:  #CAF500; 
+   width: 50px;
+   text-align: center;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border:none;
+}
+
+.search-icon {
+    color: #4100F5;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+/** box4 **/
+.language-flag{
+   background-image: url(download.png);
+   background-size: cover;
+   height: 15px;
+   width:30px;
+   border: 1px solid black;
+}
+
+.language{
+    display: flex;
+}
+.select-language{
+    background-color: #4100F5;
+    color: #CAF500;
+    text-shadow: #CDF564;
+}
+
+/** box5 **/
+
+span{
+    font-size: 0.8rem;
+}
+.nav-second{
+   font-size: 1rem;
+   font-weight: 1000;
+}
+
+/** box6 **/
+
+.nav-cart i {
+   font-size: 25px
+}
+.nav-cart {
+    display: flex;
+    font-weight: 1000;
+}
+
+/** panel **/
+
+.panel{
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #CAF500;
+    color:  #4100F5 ;
+    transition: transform 0.3s ease;
+
+}
+.panel-options1{
+    transition: transform 0.3s ease; 
+}
+.panel-options1:hover{
+   transform: scale(1.2); 
+}
+
+.panel-options a {
+   color:  #4100F5 ;
+   text-decoration: none;
+} 
+
+.panel-options a {
+   padding: 5px;
+}
+
+.panel-options {
+    width: 70%;
+    font-size: .85rem;
+}
+
+.Fooling-you {
+    font-weight: 1000;
+}
+.panel-all{
+    font-weight: 1000;
+}
+
+/** hero section **/
+
+.hero-section {
+    background-image: url(b087986f-49ea-45ff-9fdc-2e3c9cae0c63.jpeg);
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-message {
+    background-color: #CAF500;
+    color: #4100F5;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 80%;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.hero-message a {
+    font-weight: 1000;
+}
+
+.hero-message p:hover {
+    animation: FadeInOut 4.0s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes FadeInOut {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.box{
+    height: 380px;
+    width: 22%;
+    border: 5px outset #ff9401;
+    transition: transform 0.3s ease; box-shadow: 0.3s ease;
+
+}
+.box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px #4100F5 ;
+}
+
+.shop-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #CAF500;
+    background: radial-gradient(circle, rgba(202, 245, 0, 1) 0%, rgba(65, 0, 245, 1) 100%);  
+}
+
+.shop-section a{
+    text-decoration: none;
+}
+
+.box1-img{
+    background-image: url("18-KBeauty-Brands-V1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+.box1-img:hover{
+     transform: scale(1.1);
+}
+
+.box-content{
+   margin-left: 1rem;
+   margin-right: 1rem;
+   margin-top: 1rem;
+   color: #CAF500;
+   text-shadow: 1px 1px #4100F5;
+}
+
+.box1-p {
+    color: #CAF500;
+}
+
+.shop-section h2,
+.shop-section a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.shop-section h2::after,
+.shop-section a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    bottom: -2px;
+    width: 0;
+    background-color: #ff9401;
+    transition: width 0.2s ease;
+}
+
+.shop-section h2:hover::after,
+.shop-section a:hover::after {
+    width: 100%;
+}
+
+.box2-img{
+    background-image: url("gpt-image-1_Create_an_image_that.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box2-p {
+    color: #CAF500;
+}
+
+.box3-img{
+    background-image: url("gpt-image-1_Create_a_high-resolu (2).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box3-p {
+    color: #CAF500;
+}
+
+.box4-img{
+    background-image: url("gpt-image-1_Create_a_high-resolu (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box4-p {
+    color: #CAF500;
+}
+
+.box5-img{
+    background-image: url("gen-z-skin-care.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box5-p {
+    color: #CAF500;
+}
+
+.box6-img{
+    background-image: url("gpt-image-1_Create_a_high-resolu.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box6-p {
+    color: #CAF500;
+}
+
+.box7-img{
+    background-image: url("gpt-image-1_Create_an_image_that (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box7-p {
+    color: #CAF500;
+}
+
+.box8-img{
+    background-image: url("gpt-image-1__Create_an_image_tha.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.box8-p {
+    color: #CAF500;
+}
+
+
+footer {
+ border: 5px outset #890176 ;
+}
+.footpannel1{
+    background-color: #CAF500;
+    color: #4100F5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footpannel2{
+    background-color: #4100F5;
+    color: #CAF500;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul a {
+    display: block;
+    color: #ff9401;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+ul p {
+    font-size: 1.5rem;
+}
+
+.footpannel3{
+    background-color: #CAF500;
+    height: 70px;
+    border: 5px outset #890176 ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logofooter{
+    background-image: url(Your_paragraph_text-removebg-preview.png);
+    background-size: cover;
+    height: 50px;
+    width: 63px;
+} 
+
+.footerlanguage{
+   color: #4100F5;
+   border: 2x solid #4100F5; 
+}
+
+#lang {
+    background-color: #CAF500;
+    height: 50%; width: 100px; 
+    border: 2px solid #4100F5;
+}
+
+.country{
+    width: 10%;
+}
+.footpannel4{
+    background-color: #4100F5;
+    color: #CAF500;
+    height: 40px;
+    text-align: center; 
+}
+
+.pages a{
+  font-size: 0.9rem;
+  color: #CAF500;
+  text-decoration: none;
+}
+
+.copyright{
+   font-size: 0.7rem;
+   margin-top: 5px; 
+}

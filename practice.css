@@ -1,0 +1,160 @@
+*{
+  color: #05d9e8;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+#navbar {
+    height: 60px ;
+    background-color: #01012b;
+    padding-left: 10px;
+    padding-top: 30px;
+    border: #000000;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 50px;
+}
+
+button{
+  color: #ff2a6d ;
+  background-color: #005678;
+}
+
+a{
+    color:  #ff2a6d ;
+    text-decoration: none;
+}
+
+a {
+    margin-right: 200px;
+}
+
+.layout{
+  height: 100px;
+  width: 100px;
+  color: blue;
+  border: 2px dotted #ff2a6d;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+#ft{
+  background-color: #01012b ;
+  color: #ff2a6d;
+  text-align: center;
+}
+
+#hd{
+  color: #01012b ;
+}
+
+#bx1{
+  background-color: rgba(255, 0, 230,0.5);
+}
+
+#bx2{
+  background-color: rgba(255, 0, 230,0.75);
+}
+
+#bx3{
+  background-color: rgba(255, 0, 230,1);
+}
+
+#contentArea{
+  height: 480px;
+  width: 800px;
+}
+#ln {
+ height: 100px;
+ width: 100px;
+ background-image: url("53820415-9e80-4b2f-a907-0773f731aca0.jpg");
+ background-size: cover;
+ position: absolute;
+ right: 0;
+border-top: 10px;
+border-bottom: 100px;
+}
+
+.N1 {
+  background-color: #05d9e8;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+.outer {
+  height: 200px;
+  width: 200px;
+  background-color: #05d9e8;
+  display: flex;
+  position: relative;
+  left: 50%;
+  top : 50px;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  height: 50px;
+  width: 50px;
+  background-color: #01012b;
+  border-radius: 50% ;
+}
+
+@media (min-width : 600pxpx){
+  div{
+
+    background-color: coral;
+  }
+}
+
+div {
+ transition: all 2s ease 1s ;
+}
+div:hover{
+  color: black;
+  background-color: red;
+  font-size: 20px;
+}
+
+div:active{
+  color: greenyellow;
+}
+
+.layout:hover{
+ transform: scale(1.5);
+}
+
+#bx2:hover{
+  transform: translate(200px,200px)
+}
+.outer:hover{
+transform: skew(45deg);
+}
+
+@keyframes firstani {
+  from {left: 0px;
+       color: pink}
+       50%{font-style: italic;}
+  to {left:200px;
+      color: #ff2a6d;}
+}
+
+p {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  color: #01012b;
+  font-size: 50px;
+  animation-name: firstani;
+  animation-duration: 1s;
+  animation-timing-function: step(1);
+  animation-delay: 0s;
+  animation-iteration-count: 5;
+  animation-direction: alternate-reverse;
+}
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTRL+Me</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="Blue and White Globe Y2K Streetwear Logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <video autoplay muted loop id="bgVid">
+    <source src="rjv.1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <header id="navbar">
+    <a href="#">How we get down</a>
+    <a href="#">What we do</a>
+    <a href="#">Our latest work</a>
+    <a href="#">Less collab</a>
+    <a href="#">Connect & Politic</a>
+    <a href="#">Shop</a>
+  </header>
+
+  <section id="title">
+    <h1 id="front">RJV WORLD</h1>
+    <div id="taglines">
+      <p id="front2">Elevated art of Lenses</p>
+      <p id="front3">Since 2020</p>
+    </div>
+  </section>
+
+  <section id="TitleSecond">
+    <img src="Untitled design - 2025-07-24T200437.224.png" alt="Decorative frame" id="SecondFrame">
+    <h1 id="frontsecond">We capture time, emotion, and truth—preserving stories through every frame for generations to witness, remember, and feel.</h1>
+  </section>
+
+  <section class="TitleThird">
+    <img src="ok.jpg" id="backgroundThird" alt="Background texture">
+    
+    <nav class="navbarSecond">
+      <a href="#">Portrait</a>
+      <a href="#">Landscape</a>
+      <a href="#">Nature</a>
+      <a href="#">Wedding</a>
+      <a href="#">Food</a>
+      <a href="#">Street</a>
+    </nav>
+
+    <div class="thirdImages">
+      <img src="366164347_3693934687598999_2765510798159210145_n.webp" alt="Portrait" class="img img-top-left">
+      <img src="364972497_2255851047932235_8898360750151552276_n.webp" alt="Landscape" class="img img-top-right">
+      <img src="385857623_1247622316640098_1052869904348795703_n.jpg" alt="Nature" class="img img-bottom-left">
+      <img src="386790942_268637339478983_3046365300853449426_n.webp" alt="Street" class="img img-bottom-right">
+    </div>
+
+    <div class="thirdText">
+      <h1>Our mission is to capture powerful and authentic moments through the lens—telling diverse visual stories from the perspective of those redefining our world and culture.</h1>
+      <button class="LearnMore">Learn More</button>
+    </div>
+  </section>
+
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop && currentScroll > 100) {
+        navbar.style.top = "-100px";
+      } else {
+        navbar.style.top = "0";
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
+
+</body>
+</html>
