@@ -25,6 +25,7 @@
   </header>
 
   <section id="title">
+    <img src="3DLogoLab__2_-removebg-preview.png" alt="Logo" id="titleLogo">
     <h1 id="front">RJV WORLD</h1>
     <div id="taglines">
       <p id="front2">Elevated art of Lenses</p>
@@ -34,48 +35,75 @@
 
   <section id="TitleSecond">
     <img src="Untitled design - 2025-07-24T200437.224.png" alt="Decorative frame" id="SecondFrame">
-    <h1 id="frontsecond">We capture time, emotion, and truth—preserving stories through every frame for generations to witness, remember, and feel.</h1>
+    <h1 id="frontsecond" class="hidden-text">We capture time, emotion, and truth—preserving stories through every frame for generations to witness, remember, and feel.</h1>
   </section>
 
   <section class="TitleThird">
     <img src="ok.jpg" id="backgroundThird" alt="Background texture">
-    
-    <nav class="navbarSecond">
-      <a href="#">Portrait</a>
-      <a href="#">Landscape</a>
-      <a href="#">Nature</a>
-      <a href="#">Wedding</a>
-      <a href="#">Food</a>
-      <a href="#">Street</a>
+  <nav id="navbar">
+  <a href="#" style="--i: #f00; --j: rgb(7, 48, 48);">
+    <ion-icon name="camera-outline"></ion-icon>
+    <span class="title">How we get down</span>
+  </a>
+  <a href="#" style="--i: #0f0; --j: #ff0;">
+    <ion-icon name="image-outline"></ion-icon>
+    <span class="title">How we move</span>
+  </a>
+  <a href="#" style="--i: #f0f; --j: #00f;">
+    <ion-icon name="leaf-outline"></ion-icon>
+    <span class="title">Our lasest work</span>
+  </a>
+  <a href="#" style="--i: #f90; --j: #900;">
+    <ion-icon name="heart-outline"></ion-icon>
+    <span class="title">Let's cook</span>
+  </a>
+  <a href="#" style="--i: #0cf; --j: #06f;">
+    <ion-icon name="restaurant-outline"></ion-icon>
+    <span class="title">Wanna Vibe?</span>
+  </a>
+  <a href="#" style="--i: #999; --j: #444;">
+    <ion-icon name="walk-outline"></ion-icon>
+    <span class="title">Shop and Messages</span>
+  </a>
+</nav>
+
+<nav class="navbarSecond">
+        <a href="#creative" class="nav-link">CREATIVE</a>
+        <a href="#content" class="nav-link">CONTENT</a>
+        <a href="#music" class="nav-link">MUSIC</a>
+        <a href="#consumer" class="nav-link">CONSUMER</a>
+        <a href="#experiential" class="nav-link">EXPERIENTIAL</a>
     </nav>
 
-    <div class="thirdImages">
-      <img src="366164347_3693934687598999_2765510798159210145_n.webp" alt="Portrait" class="img img-top-left">
-      <img src="364972497_2255851047932235_8898360750151552276_n.webp" alt="Landscape" class="img img-top-right">
-      <img src="385857623_1247622316640098_1052869904348795703_n.jpg" alt="Nature" class="img img-bottom-left">
-      <img src="386790942_268637339478983_3046365300853449426_n.webp" alt="Street" class="img img-bottom-right">
-    </div>
+  
+<div class="thirdImages">
+  <div class="img-wrapper img-top-left">
+    <img src="366164347_3693934687598999_2765510798159210145_n.webp" alt="Portrait">
+    <span class="img-date">12 July 2023, Kolkata</span>
+  </div>
+  <div class="img-wrapper img-top-right">
+    <img src="364972497_2255851047932235_8898360750151552276_n.webp" alt="Landscape">
+    <span class="img-date">15 July 2023, Mount Tabu</span>
+  </div>
+  <div class="img-wrapper img-bottom-left">
+    <img src="385857623_1247622316640098_1052869904348795703_n.jpg" alt="Nature">
+    <span class="img-date">18 July 2023, Tokyo</span>
+  </div>
+  <div class="img-wrapper img-bottom-right">
+    <img src="386790942_268637339478983_3046365300853449426_n.webp" alt="Street">
+    <span class="img-date">20 July 2023, Netherlands</span>
+  </div>
+</div>
+
 
     <div class="thirdText">
-      <h1>Our mission is to capture powerful and authentic moments through the lens—telling diverse visual stories from the perspective of those redefining our world and culture.</h1>
-      <button class="LearnMore">Learn More</button>
-    </div>
+  <h1 class="hidden-text">Our mission is to capture powerful and authentic moments through the lens—telling diverse visual stories from the perspective of those redefining our world and culture.</h1>
+  <button class="LearnMore">Learn More</button>
+</div>
+    
   </section>
-
-  <script>
-    let lastScrollTop = 0;
-    const navbar = document.getElementById('navbar');
-
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScroll > lastScrollTop && currentScroll > 100) {
-        navbar.style.top = "-100px";
-      } else {
-        navbar.style.top = "0";
-      }
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    });
-  </script>
-
+<script src="rjv.js" defer></script>
 </body>
 </html>
+
+
