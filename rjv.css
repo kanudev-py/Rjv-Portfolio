@@ -213,20 +213,67 @@ body, html {
 
 .navbarSecond a {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   color: white;
-  text-shadow: 0 2px 2px red;
+  text-shadow: 0 2px 2px black;
   text-decoration: none;
   transform: scale(1);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  padding: 10px 30px;
+  overflow: hidden;
 }
+
+.navbarSecond a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 0, 0, 0.7),
+    rgba(255, 20, 20, 0.4),
+    rgba(255, 0, 0, 0.7)
+  );
+  border-radius: 50%;
+  z-index: -1;
+  animation: spinGlow 4s linear infinite;
+  filter: blur(20px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.navbarSecond a:hover {
+  transform: scale(1.1);
+}
+
+@keyframes spinGlow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 
 .navbarSecond a:hover {
   transform: scale(1.2);
   text-shadow: 0 4px 10px red;
   color: yellow;
 }
+
+.TitleThird h2 {
+color: #f0ff00;
+text-shadow: 0 4px 10px red;
+font-size: 100px;
+padding-bottom: 50px;
+} 
 .thirdImages {
   position: relative;
   width: 100%;
@@ -390,3 +437,67 @@ body, html {
     font-size: 20px;
   }
 }
+
+/* backdrop1 style (already exists) */
+#backdrop1 {
+  height: 300vh;
+  width: 100vw;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+
+/* Scroll Text Container (Overlay) */
+.scroll-text-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Individual Scroll Text */
+.scroll-text {
+  font-size: 2rem;
+  white-space: nowrap;
+  color: white;
+}
+
+#left {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  animation: scrollLeft 30s linear infinite;
+}
+
+#right {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  animation: scrollRight 30s linear infinite;
+}
+
+/* Animations */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+
+#backdrop2{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+
